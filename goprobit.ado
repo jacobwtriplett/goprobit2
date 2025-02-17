@@ -1,8 +1,8 @@
 *! version 1.0.0  17feb2025
 
 /***************************    PRIMARY ROUTINE     ***************************/
-capture program drop goprobit
 program define goprobit, eclass
+	version 14
 
 	syntax varlist [fw iw pw] [if] [in] [, DISTribution(string) * ]
 	
@@ -74,7 +74,6 @@ end
 
 
 /***********************    DISTRIBUTION OPTIONS    ***************************/
-capture program drop GetDistributionOptions
 program define GetDistributionOptions, rclass
 
 	if ("`0'"=="") | ("`0'"=="normal") {
@@ -161,7 +160,6 @@ end
 
 
 /**************************    EVALUATOR PROGRAMS   ***************************/
-capture program drop goprobit_normal_llf
 program goprobit_normal_llf
 	
 	args lnf ${args}
@@ -191,7 +189,6 @@ program goprobit_normal_llf
 end
 
 
-capture program drop goprobit_laplace_llf
 program goprobit_laplace_llf
 	
 	args lnf ${args}
@@ -222,7 +219,6 @@ program goprobit_laplace_llf
 end
 
 
-capture program drop goprobit_sged_llf
 program goprobit_sged_llf
 	
 	args lnf ${args}
@@ -279,7 +275,6 @@ program goprobit_sged_llf
 end
 
 
-capture program drop goprobit_sgt_llf
 program goprobit_sgt_llf
 	
 	args lnf ${args}
