@@ -1,22 +1,22 @@
 v 3
 
-d 'GOPROBIT': Generalized Ordered Probit
+d 'GOPROBIT2': Generalized Ordered Probit
 d
 d Authors: Jacob Triplett
 d Support: Jacob Triplett at jacob_triplett@kenan-flagler.unc.edu
 d
 d goprobit estimates ordered response models, drawing from a selection of flexible link functions beyond the conventional Normal CDF.
 d
-d KW: goprobit
+d KW: goprobit2
 d KW: oprobit
 d KW: ologit
-d KW: probit
-d KW: logit
+d KW: goprobit
+d KW: gologit2
 d
-d Requires Stata version 11.2
+d Requires Stata version 15
 d
 d Distribution date: 17feb2025
 d
 
-f goprobit.ado
-f goprobit.sthlp
+f goprobit2.ado
+f goprobit2.sthlp
